@@ -1,0 +1,19 @@
+.contenedor{
+    display: grid;
+    /* las columnas que tiene nuestro grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* las filas del frid */
+    grid-template-rows: 40px 200px 40px;
+}
+
+.item1{ /* aca va de la 1 a la 4 columna*/
+    grid-column-start: 1;
+    grid-column-end:4;
+    background-color: darkturquoise;
+}
+
+.item2{ /*aca va de la columna 2 a la 4 fila*/
+    grid-row-start: 2;
+    grid-row-end:4;
+    background-color: rgb(209, 0, 0);
+} 

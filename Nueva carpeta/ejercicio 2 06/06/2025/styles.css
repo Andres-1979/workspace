@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+#titulo-gris {
+    color: #999696;
+    text-transform: uppercase;
+}
+
+#titulo-naranja {
+    color: #ff7402;
+    text-transform: uppercase;
+}
+
+#parrafo-naranja {
+    color: #ff7402;
+}
+
+#div-encabezado {
+    background-color: #363436;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}

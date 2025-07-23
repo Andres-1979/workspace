@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    font-family: sans-serif;
+}
+h1 {  
+    font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    text-align: center;
+}
+
+
+h3 { 
+    font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    text-align: center;
+    
+}
+
+.mes {
+  display: inline-block;
+  width: 22%;
+  height: 150px;
+  margin: 1%;
+  vertical-align: top;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.clase1 {
+    font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+  background-color: #397fb8;
+  border-radius: 15px;
+  text-align: center;
+  color: #0c60fd;
+  border: 2px dashed #393383;
+  background:#06c9fa;
+}
+
+.clase2 {
+    font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
+    background-color: #e22d51;
+    border-radius: 15px;
+   text-align: center;
+   justify-content: center;
+  color: #437c0d;
+  border: 2px dashed #035a0e;
+  background-color: #70eb7a;
+}

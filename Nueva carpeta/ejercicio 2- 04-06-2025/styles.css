@@ -1,0 +1,38 @@
+body {
+    background: #80abfc;
+    font-family:  Arial, sans-serif;
+}
+
+table {
+  background: #80abfc;
+  border-collapse: collapse;
+  color: #ffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+td {
+    padding: 30px 10px;
+    color: #ffff;
+  background: #80abfc;
+}
+
+#encabezado {
+    padding: 20px 30px;
+    font-size: 2rem;
+    background: #000;
+    text-transform: uppercase;
+}
+
+
+.fila-gris {
+    background-color: #5e5e5e;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.fila-azul {
+    background-color: #0084ff;
+    color: #5f0085;
+    text-transform: uppercase;
+}

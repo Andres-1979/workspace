@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+h1{
+   font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: darkcyan;
+}
+
+.contacto {
+    display: inline-block;
+    background-color: #8671fa;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    gap: 1rem;
+}
+
+.titulo-principal{
+    text-align: center;
+     font-family: "Caveat", cursive;
+     font-optical-sizing: auto;
+     font-style: normal;
+     text-transform: uppercase;
+
+}

@@ -1,0 +1,92 @@
+body {
+    background: #80abfc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#main {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ff0062;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  color: #ffff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+td {
+  padding: 50px 40px;
+}
+
+.titulo-tabla {
+  border-right: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#Verde {
+    background-color: #006800;
+
+}
+#Morado {
+    background-color: #690099;
+
+}
+#Gris {
+    background-color: #5e5e5e;
+
+}
+#Celeste {
+    background-color: #b2ffff;
+}
+#Amarillo {
+    background-color: #c8ff00;
+}
+#Rosado {
+    background-color: #ff00aaad;
+}
+#Rojo {
+    background-color: #ff0000;
+}
+#Azul {
+    background-color: #121fc9;
+}
+
+#magenta {
+    background-color: #FF00FF;
+}
+#Turquesa {
+    background-color: #30D5C8;
+}
+#Naranjado {
+    background-color: #FFA500;
+}
+#Lila {
+    background-color: #C8A2C8;
+}
+#Lima {
+    background-color: #32cd32;
+}
+#Salmon {
+    background-color: #FA8072;
+}
+#Cyan {
+    background-color: #00FFFF;
+}
+#Cafe {
+    background-color: #804000;
+}
+
+
+
