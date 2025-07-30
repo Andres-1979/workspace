@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to right, #0080ff, #0080ff);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.logo-img {
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-inner  {
+    width: 500px;
+    height: 500px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: center;    /* centrado horizontal */
+  align-items: center;        /* centrado vertical */
+  height: 100vh;              /* alto de toda la pantalla */
+  background-color: #0084ff;  /* opcional: color de fondo */
+  padding: 20px;              /* opcional: espacio interno */
+  box-sizing: border-box;
+}
