@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Para apilar el h1 y la imagen verticalmente */
+  align-items: center;    /* Centrado horizontal */
+  justify-content: center; /* Centrado vertical */
+  height: 100vh;          /* Toma toda la altura de la pantalla */
+  text-align: center; 
+  gap: 1rem;    /* Centra el texto */
+}
+
+.container img {
+  max-width: 20%;
+  height: auto;
+  border-radius: 100%;
+}
