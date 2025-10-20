@@ -1,0 +1,386 @@
+@import "./style.css";
+
+/*=============== COMO FUNCIONA ===============*/
+.how {
+  padding: 100px 20px;
+  background: var(--body-color);
+  text-align: center;
+}
+
+.header__main {
+  text-align: center;
+  justify-content: center;
+}
+.how__title {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.how__subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 50px;
+}
+
+.how__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  gap: 20px; /* espacio entre las cards */
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.how__card {
+  background: #4f1b6b;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.how__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.how__icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+/* 🔒 Overlay de bloqueo */
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #d887e3;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.how__card.locked:hover .lock-overlay {
+  opacity: 1;
+}
+
+.btn-login {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 12px;
+  background: #ff7b00;
+  color: #fff;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #e76f00;
+}
+
+/* 📱 Responsive: en pantallas pequeñas, solo 1 por fila */
+@media (max-width: 768px) {
+  .how__grid {
+    grid-template-columns: 1fr;
+  }
+}
+ñ .how__icon {
+  width: 80px;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.how__card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.how__card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Animación flotante */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Overlay de bloqueo */
+.locked {
+  position: relative;
+  opacity: 20.6;
+}
+
+.lock-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.locked:hover .lock-overlay {
+  opacity: 1;
+}
+
+.btn-login {
+  margin-top: 15px;
+  background: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #e91e63;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.step {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1.5rem;
+  border-radius: 15px;
+  transition: transform 0.3s, background 0.3s;
+}
+.step:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+}
+.step img {
+  width: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.mini-quiz {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 2rem;
+}
+.mini-quiz button {
+  background: #ff4ecb;
+  border: none;
+  padding: 10px 20px;
+  margin: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.mini-quiz button:hover {
+  transform: scale(1.1);
+}
+
+.cta {
+  margin: 3rem 0;
+}
+.cta-btn {
+  background: linear-gradient(45deg, #ff4ecb, #9b4dff);
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(255, 78, 203, 0.8);
+  transition: transform 0.2s;
+}
+.cta-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Estrellas en el fondo */
+#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 3s infinite;
+}
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Animaciones generales */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animaciones aplicadas */
+.header__main {
+  animation: fadeInDown 1s ease forwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.how__card {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.how__card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.how__card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.how__card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.how__card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.timeline .step {
+  opacity: 0;
+  animation: fadeInLeft 1s ease forwards;
+}
+
+.timeline .step:nth-child(1) {
+  animation-delay: 1s;
+}
+.timeline .step:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.timeline .step:nth-child(3) {
+  animation-delay: 1.6s;
+}
+.timeline .step:nth-child(4) {
+  animation-delay: 1.9s;
+}
+
+.mini-quiz {
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  animation-delay: 2.2s;
+}
+
+.cta {
+  opacity: 0;
+  animation: popIn 0.8s ease forwards;
+  animation-delay: 2.8s;
+}

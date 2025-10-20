@@ -1,0 +1,425 @@
+@import "./style.css";
+
+/* ==== Estilos de las imágenes espaciales ==== */
+
+.contact {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact__header h1 {
+  font-size: 2rem;
+  color: #ff7b00;
+  margin-bottom: 10px;
+  animation: fadeInDown 1s ease;
+}
+
+.contact__header p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact__form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeInUp 1s ease;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #ff7b00;
+}
+
+.btn-submit {
+  background: #ff7b00;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #e76f00;
+  width: 100%;
+  transform: scale(1.05);
+}
+
+#form-message {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Imagen de MonoMat */
+.contact__monomath img {
+  width: 150px;
+  margin-top: 20px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animaciones */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Animaciones */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rocketMove {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(30px, -30px) rotate(-10deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* =============== CONTACT FORM STYLES =============== */
+.contact {
+    position: relative;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    padding: 2rem 1rem;
+    overflow: hidden;
+}
+
+.contact__header {
+    text-align: center;
+    color: white;
+}
+
+.contact__header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact__header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* =============== FORM SECTION =============== */
+.contact__form-section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+.contact__form-section::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7);
+    border-radius: 22px;
+    z-index: -1;
+    animation: gradientShift 8s ease infinite;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.contact__form-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+    font-size: 1.8rem;
+    position: relative;
+}
+
+.contact__form-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #4ecdc4, #45b7d1);
+    border-radius: 3px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #444;
+    font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e1e5ee;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4ecdc4;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(45deg, #4ecdc4, #45b7d1);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(69, 183, 209, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(69, 183, 209, 0.4);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+#form-message {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 500;
+    min-height: 1.5rem;
+}
+
+/* =============== SPACE IMAGES =============== */
+.contact__monomath {
+    width: 50%;
+}
+
+.space-image {
+    position: absolute;
+    max-width: 100%;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+}
+
+.home__points {
+    top: 0;
+    left: 10%;
+    width: 80%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.home__planet-2 {
+    top: 10%;
+    right: 5%;
+    width: 30%;
+    animation: float 8s ease-in-out infinite 1s;
+}
+
+.home__planet-1 {
+    bottom: 20%;
+    left: 5%;
+    width: 25%;
+    animation: float 10s ease-in-out infinite 2s;
+}
+
+.home__rocket {
+    bottom: 10%;
+    right: 15%;
+    width: 40%;
+    animation: float 5s ease-in-out infinite 0.5s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    33% { transform: translateY(-20px) rotate(2deg); }
+    66% { transform: translateY(-10px) rotate(-2deg); }
+}
+
+/* =============== MONOMATH IMAGE =============== */
+.contact__monomath {
+    text-align: center;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 5;
+}
+
+.contact__monomath img {
+    max-width: 200px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* =============== RESPONSIVE DESIGN =============== */
+@media (max-width: 768px) {
+    .contact__container {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 2rem;
+    }
+    
+    .contact__form-section, .contact__space-images {
+        max-width: 100%;
+    }
+    
+    .contact__space-images {
+        height: 300px;
+        order: -1;
+    }
+    
+    .contact__form-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact__header h1 {
+        font-size: 2rem;
+    }
+    
+    .contact__header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 1rem 0.5rem;
+    }
+    
+    .contact__form-section {
+        padding: 1.5rem 1rem;
+    }
+    
+    .contact__header h1 {
+        font-size: 1.8rem;
+    }
+}

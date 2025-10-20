@@ -1,0 +1,128 @@
+/* === Estilos generales === */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* === Header === */
+.header {
+  background: #2196f3;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin-left: 20px;
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+  color: #ffd54f;
+}
+
+.logout {
+  background: #e53935;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+/* === Bienvenida === */
+.welcome {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.welcome h1 {
+  font-size: 28px;
+  color: #4caf50;
+}
+
+.welcome span {
+  font-weight: bold;
+  color: #2196f3;
+}
+
+.welcome p {
+  color: #555;
+}
+
+/* === Dashboard === */
+
+.container-dashboard-cards {
+  max-width: 1000px;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 0;
+}
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.btn-cards {
+  background: #4caf50;
+  border: none;
+  padding: 10px 18px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-cards:hover {
+  background: #388e3c;
+}

@@ -1,0 +1,65 @@
+/*==================== FOOTER ====================*/
+footer {
+  background: #2e1a57; /* Morado oscuro */
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.footer__logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer__links {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer__link:hover {
+  color: #ff4ec1; /* Rosa degradado */
+}
+
+.footer__social {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.footer__social-link {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.footer__social-link:hover {
+  color: #ff4ec1;
+}
+
+.footer__copy {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+}
